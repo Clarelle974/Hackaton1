@@ -1,7 +1,11 @@
+import "../styles/page404.css";
+
 export default function Page404() {
   return (
     <>
-      <h1>Are you lost, sailor?</h1>
+      <main className="page404">
+        <h1 className="typewriter">Are you lost, sailor?</h1>
+      </main>
     </>
   );
 }
