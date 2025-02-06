@@ -9,8 +9,14 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
 // Import additional components for new routes
+import BoardPage from "./pages/BoardPage";
+import Crew from "./pages/Crew";
+import EnemyShips from "./pages/EnemyShips";
 import Homepage from "./pages/Homepage";
+import News from "./pages/News";
 import Page404 from "./pages/Page404";
+import Shop from "./pages/Shop";
+import Weather from "./pages/Weather";
 
 /* ************************************************************************* */
 
@@ -24,6 +30,30 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/boardpage",
+        element: <BoardPage />,
+      },
+      {
+        path: "/crew",
+        element: <Crew />,
+      },
+      {
+        path: "/weather",
+        element: <Weather />,
+      },
+      {
+        path: "/enemyships",
+        element: <EnemyShips />,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
+        path: "/news",
+        element: <News />,
       },
     ],
   },
