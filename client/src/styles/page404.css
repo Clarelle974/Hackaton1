@@ -1,0 +1,25 @@
+.page404 {
+  display: flex;
+  height: 100vh;
+  color: antiquewhite;
+  background-image: url("/404.png");
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page404 h1 {
+  font-size: 6rem;
+  width: 50%;
+  font-size: 6rem;
+  font-family: monospace;
+  color: antiquewhite;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
