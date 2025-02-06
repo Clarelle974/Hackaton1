@@ -1,0 +1,18 @@
+.mini-card {
+  display: flex;
+  flex-direction: column;
+}
+.mini-card img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mini-card h3 {
+  font-size: 1rem;
+  font-family: "Inknut Antiqua", serif;
+  margin-top: 1rem;
+  line-height: 120%;
+  text-align: center;
+}

@@ -17,9 +17,7 @@ li {
   list-style-type: none;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.BackgroundHome a {
   border: solid;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
