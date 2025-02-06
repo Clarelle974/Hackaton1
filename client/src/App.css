@@ -16,4 +16,9 @@ body {
   font-family: "Inknut Antiqua", serif;
   font-weight: 400;
   font-style: normal;
+  color: antiquewhite;
+}
+h1,
+h2 {
+  font-family: "TheRumIsGone", sans-serif;
 }
