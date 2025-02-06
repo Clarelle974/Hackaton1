@@ -46,6 +46,7 @@ export const articlesPirates = [
 
 export interface Navire {
   nom: string;
+  img?: string;
   capitaine: string;
   tailleEquipage: number;
   type: string;
@@ -56,6 +57,7 @@ export interface Navire {
 export const naviresEnnemis: Navire[] = [
   {
     nom: "Le Trident Sanglant",
+    img: "/trident-sanglant.webp",
     capitaine: "Morgan 'Le Requin' Blacktooth",
     tailleEquipage: 80,
     type: "Frégate",
@@ -67,6 +69,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "La Veuve Écarlate",
+    img: "/veuve-ecarlate.webp",
     capitaine: "Isabella 'Sans-Pitié' De Vega",
     tailleEquipage: 60,
     type: "Brick",
@@ -78,6 +81,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "L'Ouragan Noir",
+    img: "/ouragan-noir.webp",
     capitaine: "Sebastian 'Main de Fer' Graves",
     tailleEquipage: 100,
     type: "Galion",
@@ -89,6 +93,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "Le Ventre de Poséidon",
+    img: "/ventre-poseidon.png",
     capitaine: "Bartholomew 'Trois Poumons' Flint",
     tailleEquipage: 50,
     type: "Sloop rapide",
@@ -100,6 +105,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "Le Jugement Dernier",
+    img: "/jugement-dernier.png",
     capitaine: "Ezekiel 'Le Pieux' Crowe",
     tailleEquipage: 75,
     type: "Navire de guerre",
@@ -112,6 +118,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "L'Anguille Fantôme",
+    img: "/aiguille-fantome.png",
     capitaine: "Silas 'Sans-Visage' Vayne",
     tailleEquipage: 40,
     type: "Corvette légère",
