@@ -1,5 +1,5 @@
-import type { Navire } from "../services/data";
 import { Link } from "react-router-dom";
+import type { Navire } from "../services/data";
 import "../styles/enemy-card.css";
 
 interface EnemyCardProps {
