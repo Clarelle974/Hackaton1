@@ -142,7 +142,17 @@ export const naviresEnnemis: Navire[] = [
   },
 ];
 
-export const boutiquePirate = [
+export type ArticleBoutique = {
+  nom: string;
+  categorie: string;
+  prix: string;
+  description: string;
+  particularite: string;
+  rarete: string;
+  image: string;
+};
+
+export const boutiquePirate: ArticleBoutique[] = [
   {
     nom: "Sabre du Kraken",
     categorie: "Arme",
@@ -151,16 +161,18 @@ export const boutiquePirate = [
       "Un sabre recouvert d'écailles noires, censé avoir été trempé dans le sang d'un kraken.",
     particularite: "Laisse une légère odeur de poisson après chaque coup.",
     rarete: "Légendaire",
+    image: "./public/sabrepirate.jpeg",
   },
   {
-    nom: "Pistolet à silex 'Crachouilleur'",
+    nom: "Canon à silex 'Crachouilleur'",
     categorie: "Arme",
-    prix: "80 pièces d'or",
+    prix: "800 pièces d'or",
     description:
-      "Un pistolet à un coup, précis si le vent est du bon côté (et si on prie assez fort).",
+      "Un canon à un coup, précis si le vent est du bon côté (et si on prie assez fort).",
     particularite:
       "Parfois, il tire tout seul… quand il est de mauvaise humeur.",
     rarete: "Rare",
+    image: "./public/canon.jpeg",
   },
   {
     nom: "Boussole de l'Indécis",
@@ -170,16 +182,18 @@ export const boutiquePirate = [
       "Indique toujours une direction… mais jamais la même deux fois de suite.",
     particularite: "Parfait pour se perdre avec style.",
     rarete: "Étrange",
+    image: "./public/boussole.jpeg",
   },
-  {
-    nom: "Crochet 'Main d'Argent'",
-    categorie: "Prothèse",
-    prix: "100 pièces d'or",
-    description:
-      "Un élégant crochet en argent, idéal pour gratter sous un bandage ou ouvrir une bouteille de rhum.",
-    particularite: "Électrise légèrement quiconque lui serre la main.",
-    rarete: "Épique",
-  },
+  // {
+  //   nom: "Crochet 'Main d'Argent'",
+  //   categorie: "Prothèse",
+  //   prix: "100 pièces d'or",
+  //   description:
+  //     "Un élégant crochet en argent, idéal pour gratter sous un bandage ou ouvrir une bouteille de rhum.",
+  //   particularite: "Électrise légèrement quiconque lui serre la main.",
+  //   rarete: "Épique",
+  //   image: "./public/boussole.jpeg",
+  // },
   {
     nom: "Chapeau de Capitaine 'Grande Gueule'",
     categorie: "Vêtements",
@@ -188,6 +202,7 @@ export const boutiquePirate = [
       "Un tricorne noir orné d'une plume de corbeau, parfait pour imposer le respect.",
     particularite: "Amplifie la voix du porteur lorsqu'il donne des ordres.",
     rarete: "Rare",
+    image: "./public/ChapeauCapitaine.jpeg",
   },
   {
     nom: "Jumelles 'Oeil de Loup'",
@@ -198,6 +213,7 @@ export const boutiquePirate = [
     particularite:
       "Un œil fantomatique apparaît parfois dans la lentille gauche.",
     rarete: "Mystique",
+    image: "./public/jumelle.png",
   },
   {
     nom: "Carte au Trésor Incomprise",
@@ -207,6 +223,7 @@ export const boutiquePirate = [
       "Une carte dessinée par un pirate fou… personne n'a encore su déchiffrer son code.",
     particularite: "Brille dans le noir les soirs de pleine lune.",
     rarete: "Unique",
+    image: "./public/carteautrésor.jpeg",
   },
   {
     nom: "Bottes de Loup de Mer",
@@ -216,6 +233,7 @@ export const boutiquePirate = [
       "Des bottes en cuir trempé, résistantes à l'eau, au sable et aux promesses non tenues.",
     particularite: "Ne laissent aucune empreinte, sauf dans la neige.",
     rarete: "Rare",
+    image: "./public/bottespirate.jpeg",
   },
   {
     nom: "Tonnelet de Rhum Maudit",
@@ -225,16 +243,18 @@ export const boutiquePirate = [
       "Un rhum noirci par le sel et le temps… délicieux, mais il fait chanter celui qui en boit.",
     particularite: "Plus on en boit, plus on chante juste.",
     rarete: "Maudit",
+    image: "./public/tonnelet.jpeg",
   },
-  {
-    nom: "Corde de Pendaison Recyclée",
-    categorie: "Outil",
-    prix: "30 pièces d'or",
-    description:
-      "Une corde solide et usée… qui a déjà servi à quelque chose de peu réjouissant.",
-    particularite: "Parle parfois en chuchotant des avertissements.",
-    rarete: "Troublant",
-  },
+  // {
+  //   nom: "Corde de Pendaison Recyclée",
+  //   categorie: "Outil",
+  //   prix: "30 pièces d'or",
+  //   description:
+  //     "Une corde solide et usée… qui a déjà servi à quelque chose de peu réjouissant.",
+  //   particularite: "Parle parfois en chuchotant des avertissements.",
+  //   rarete: "Troublant",
+  //   image: "./public/PerroquetEmpoisonneur.jpeg",
+  // },
   {
     nom: "Perroquet Empoisonneur",
     categorie: "Animal de Compagnie",
@@ -243,6 +263,7 @@ export const boutiquePirate = [
       "Un perroquet capable d’imiter n’importe quelle voix pour mieux manipuler les ennemis.",
     particularite: "Insulte les passants sans raison apparente.",
     rarete: "Légendaire",
+    image: "./public/PerroquetEmpoisonneur.jpeg",
   },
   {
     nom: "Œil de Verre 'Vision de l'Au-delà'",
@@ -252,6 +273,7 @@ export const boutiquePirate = [
       "Un œil de verre enchanté qui permet de voir les âmes perdues en mer.",
     particularite: "Se met à pleurer tout seul certains soirs…",
     rarete: "Surnaturel",
+    image: "./public/oeilverre.jpeg",
   },
 ];
 
