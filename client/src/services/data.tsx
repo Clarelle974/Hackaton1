@@ -1,4 +1,4 @@
-const articlesPirates = [
+export const articlesPirates = [
   {
     titre:
       "Le Capitaine 'Vent-en-Panne' Coincé en Mer Sans un Souffle de Brise !",
@@ -44,7 +44,16 @@ const articlesPirates = [
   },
 ];
 
-const naviresEnnemis = [
+export interface Navire {
+  nom: string;
+  capitaine: string;
+  tailleEquipage: number;
+  type: string;
+  armement: string;
+  reputation: string;
+  particularite: string;
+}
+export const naviresEnnemis: Navire[] = [
   {
     nom: "Le Trident Sanglant",
     capitaine: "Morgan 'Le Requin' Blacktooth",
@@ -115,7 +124,7 @@ const naviresEnnemis = [
   },
 ];
 
-const boutiquePirate = [
+export const boutiquePirate = [
   {
     nom: "Sabre du Kraken",
     categorie: "Arme",
@@ -228,7 +237,7 @@ const boutiquePirate = [
   },
 ];
 
-const equipagePirate = [
+export const equipagePirate = [
   {
     nom: "Barbe-Foudre",
     surnom: "Le Capitaine Électrique",
