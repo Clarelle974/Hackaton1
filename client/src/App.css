@@ -22,3 +22,7 @@ h1,
 h2 {
   font-family: "TheRumIsGone", sans-serif;
 }
+
+Link {
+  text-decoration: none;
+}

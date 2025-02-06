@@ -26,7 +26,7 @@ a {
   font-family: "TheRumIsGone", sans-serif;
 }
 
-a:hover {
+.link-board {
   background-color: rgba(255, 255, 255, 0.373);
 }
 
