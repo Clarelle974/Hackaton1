@@ -1,5 +1,5 @@
-import { naviresEnnemis } from "../services/data";
 import { useParams } from "react-router-dom";
+import { naviresEnnemis } from "../services/data";
 import "../styles/enemy-details.css";
 
 export default function EnemyDetails() {
