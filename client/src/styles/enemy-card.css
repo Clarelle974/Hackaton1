@@ -33,3 +33,9 @@
     font-style: italic;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .shipCard {
+    width: 35vw;
+  }
+}

@@ -8,10 +8,11 @@ export default function EnemyShips() {
     <>
       <div className="EnemyShips">
         <h1>enemy ships</h1>
-
-        {naviresEnnemis.map((ship) => (
-          <EnemyCard key={ship.nom} ship={ship} />
-        ))}
+        <div className="shipCardContainer">
+          {naviresEnnemis.map((ship) => (
+            <EnemyCard key={ship.nom} ship={ship} />
+          ))}
+        </div>
       </div>
     </>
   );
