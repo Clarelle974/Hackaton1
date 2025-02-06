@@ -53,6 +53,17 @@ export interface Navire {
   reputation: string;
   particularite: string;
 }
+
+export interface Crew {
+  nom: string;
+  surnom: string;
+  age: number;
+  role: string;
+  phrasePreferee: string;
+  capacite: string;
+  particularite: string;
+  img: string;
+}
 export const naviresEnnemis: Navire[] = [
   {
     nom: "Le Trident Sanglant",
@@ -246,6 +257,7 @@ export const equipagePirate = [
     capacite: "Peut invoquer la foudre en levant son sabre",
     phrasePreferee: "Que le tonnerre me foudroie si je perds !",
     particularite: "Son perroquet insulte tout le monde en vieux gaélique.",
+    img: "/public/pirate.jpg",
   },
   {
     nom: "Bigoudi Jack",
@@ -255,6 +267,7 @@ export const equipagePirate = [
     capacite: "Peut tresser une barbe en pleine tempête",
     phrasePreferee: "Un nœud bien fait, c’est la clé du succès !",
     particularite: "Exige une coiffure impeccable avant chaque abordage.",
+    img: "/public/bigoudijack.jpg",
   },
   {
     nom: "Mains-d’Acier",
@@ -264,6 +277,7 @@ export const equipagePirate = [
     capacite: "Répare un navire avec trois clous et un regard menaçant",
     phrasePreferee: "Si ça tient, c’est que c’est bon.",
     particularite: "Personne ne l’a jamais vu dormir, même en pleine tempête.",
+    img: "/public/mainacier.jpg",
   },
   {
     nom: "Oeil-de-Serpent",
@@ -274,6 +288,7 @@ export const equipagePirate = [
     phrasePreferee: "Un coup de canon bien placé, et hop ! Plus de problème.",
     particularite:
       "A un bandeau sur l'œil gauche… mais son œil droit est en verre.",
+    img: "/public/pirate1 .jpg",
   },
   {
     nom: "Dent-d’Ancre",
@@ -286,6 +301,7 @@ export const equipagePirate = [
       "Si tu demandes ce qu’il y a dedans, t’es pas prêt à le manger.",
     particularite:
       "A une dent en or en forme d’ancre et une obsession pour le rhum arrangé.",
+    img: "/public/ancre.jpg",
   },
   {
     nom: "Pied-Léger",
@@ -295,15 +311,17 @@ export const equipagePirate = [
     capacite: "Se faufile partout sans un bruit",
     phrasePreferee: "Les murs ont des oreilles, moi j’ai des jambes rapides.",
     particularite: "Parle toujours en chuchotant, même en pleine bataille.",
+    img: "/public/piedslegers.jpg",
   },
   {
     nom: "Sifflote",
-    surnom: "Le Charmeur de Requins",
+    surnom: "La Charmeuse de Requins",
     age: 36,
     role: "Navigateur",
-    capacite: "Sait toujours où il est, même en pleine brume",
+    capacite: "Sait toujours où elle est, même en pleine brume",
     phrasePreferee: "Si l’étoile brille, c’est que c’est par là !",
     particularite: "Siffle tout le temps… même en dormant.",
+    img: "/public/sifflotte.jpg",
   },
   {
     nom: "Culbuto",
@@ -314,6 +332,7 @@ export const equipagePirate = [
     phrasePreferee:
       "Si tu tombes pas une fois par jour, c’est que t’apprends rien.",
     particularite: "A déjà survécu à 17 chutes de mât.",
+    img: "/public/gros.jpg",
   },
   {
     nom: "Madame Kraken",
@@ -323,6 +342,7 @@ export const equipagePirate = [
     capacite: "Peut soigner une fracture avec des algues et du rhum",
     phrasePreferee: "Bois ça. Ça va te guérir… ou t’achever.",
     particularite: "Récite des incantations bizarres en préparant des potions.",
+    img: "/public/kraken.jpg",
   },
   {
     nom: "Racine Noire",
@@ -332,6 +352,7 @@ export const equipagePirate = [
     capacite: "Fait pousser des plantes médicinales sur le pont",
     phrasePreferee: "Tout ce qui pique soigne.",
     particularite: "A un cactus qu’il appelle 'Jean-Baptiste'.",
+    img: "/public/serpent.jpg",
   },
   {
     nom: "Moustique",
@@ -342,6 +363,7 @@ export const equipagePirate = [
     phrasePreferee:
       "Ce qui est à toi est à moi, et ce qui est à moi… reste à moi.",
     particularite: "Dort avec une main sur son butin, l’autre sur sa dague.",
+    img: "/public/moustique.jpg",
   },
   {
     nom: "Bout-de-Chandelle",
@@ -352,5 +374,6 @@ export const equipagePirate = [
     phrasePreferee: "Euh… désolé, Capitaine.",
     particularite:
       "A déjà survécu à trois tentatives d’abandon sur une île déserte.",
+    img: "/public/chandelle.jpg",
   },
 ];
