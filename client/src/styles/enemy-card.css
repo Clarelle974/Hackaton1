@@ -1,0 +1,41 @@
+.shipCard {
+  display: flex;
+  width: 75vw;
+  margin: 1rem auto;
+  /* background: linear-gradient(var(--lightDark), rgb(175, 175, 175));
+  background-color: var(--lightDark); */
+  background: rgb(19, 19, 19);
+  background: linear-gradient(
+    90deg,
+    rgba(19, 19, 19, 1) 0%,
+    rgba(41, 24, 24, 1) 42%,
+    rgba(32, 0, 0, 1) 92%
+  );
+  border-radius: 0.5rem;
+
+  img {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  a {
+    text-decoration: none;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 1rem auto;
+    color: antiquewhite;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shipCard {
+    width: 35vw;
+  }
+}
