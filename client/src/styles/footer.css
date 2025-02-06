@@ -1,0 +1,19 @@
+footer {
+  border-top: 1px antiquewhite solid;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.footer-title {
+  text-align: center;
+}
+.mid-footer {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding: 2rem;
+}
+.imgfooter {
+  height: 10rem;
+}
