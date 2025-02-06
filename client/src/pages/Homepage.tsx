@@ -6,7 +6,9 @@ export default function Homepage() {
     <div className="BackgroundHome">
       <ul>
         <li>
-          <Link to="/boardpage">Embarquer</Link>
+          <Link to="/boardpage" className="link-board">
+            Embarquer
+          </Link>
         </li>
       </ul>
     </div>

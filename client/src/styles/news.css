@@ -1,0 +1,41 @@
+.news {
+  color: antiquewhite;
+}
+.banniere {
+  width: 80%;
+  height: 20rem;
+}
+.pichead {
+  height: 40rem;
+  border-radius: 10px;
+}
+.picsnews {
+  height: 16rem;
+  border-radius: 10px;
+}
+.all-news {
+  color: antiquewhite;
+}
+.firstarticle {
+  display: flex;
+  margin: 4rem;
+  gap: 2rem;
+}
+.left {
+  display: flex;
+}
+.newspage {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 65%;
+  margin: 0 auto;
+}
+.newscomp {
+  text-decoration: none;
+}
+
+.linknews {
+  border: none;
+  text-decoration: none;
+}

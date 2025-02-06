@@ -15,9 +15,11 @@ import EnemyDetails from "./pages/EnemyDetails";
 import EnemyShips from "./pages/EnemyShips";
 import Homepage from "./pages/Homepage";
 import News from "./pages/News";
+import Newsdetails from "./pages/NewsDetails";
 import Page404 from "./pages/Page404";
 import Shop from "./pages/Shop";
 import Weather from "./pages/Weather";
+import { getNewsDetails } from "./services/data";
 
 /* ************************************************************************* */
 
@@ -59,6 +61,11 @@ const router = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+      {
+        path: "/news/:id",
+        element: <Newsdetails />,
+        loader: ({ params }) => getNewsDetails(Number(params.id)),
       },
     ],
   },
