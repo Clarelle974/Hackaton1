@@ -71,7 +71,7 @@ export const naviresEnnemis: Navire[] = [
     img: "/trident-sanglant.webp",
     capitaine: "Morgan 'Le Requin' Blacktooth",
     tailleEquipage: 80,
-    type: "Frégate",
+    type: "Fregate",
     armement: "24 canons, harpons renforcés, rames pour attaques surprises",
     reputation:
       "Aborde ses ennemis en silence avant de les couler sans sommation.",
@@ -132,7 +132,7 @@ export const naviresEnnemis: Navire[] = [
     img: "/aiguille-fantome.png",
     capitaine: "Silas 'Sans-Visage' Vayne",
     tailleEquipage: 40,
-    type: "Corvette légère",
+    type: "Corvette legere",
     armement:
       "6 canons rapides, filets empoisonnés, carreaux d’arbalète silencieux",
     reputation:

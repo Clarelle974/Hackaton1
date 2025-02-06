@@ -6,6 +6,9 @@
   gap: 1rem;
   flex-direction: column;
 }
+.EnemyShips h1 {
+  padding-top: 1rem;
+}
 
 @media screen and (min-width: 768px) {
   .shipCardContainer {
