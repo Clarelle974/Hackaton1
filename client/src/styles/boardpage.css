@@ -25,11 +25,39 @@
   flex-direction: row;
   max-width: 100%;
   overflow: hidden;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 4rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 }
+.miniCardContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.miniCardContainer::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.miniCardContainer::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
 .news {
   display: flex;
   flex-direction: column;
   width: 20vw;
+  color: antiquewhite;
+}
+.newstitlehome {
+  color: antiquewhite;
+}
+
+.right-aside {
+  border-left: solid;
+  width: 25%;
+}
+
+.crew2 {
+  text-align: center;
 }

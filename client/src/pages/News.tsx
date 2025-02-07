@@ -8,7 +8,7 @@ const news = articlesPirates.slice(1);
 export default function News() {
   return (
     <section className="all-news">
-      <div className="news">
+      <div className="news1">
         <h1 className="crew">News</h1>
 
         <div className="firstarticle">
