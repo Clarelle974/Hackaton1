@@ -7,6 +7,8 @@
   flex-direction: column;
   font-size: small;
   color: antiquewhite;
+  padding: 0.5rem;
+  font-size: 20px;
 }
 .crew-card {
   display: flex;
@@ -15,7 +17,6 @@
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  margin-right: 5rem;
 }
 
 .allcrewcards {
@@ -24,7 +25,7 @@
   margin: 0 auto;
   gap: 2rem;
   margin-bottom: 4rem;
-  max-width: 65%;
+  min-width: 70%;
 }
 .crew {
   margin: 5rem;
