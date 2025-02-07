@@ -1,6 +1,6 @@
 .shipCard {
   display: flex;
-  width: 75vw;
+  width: 50vw;
   margin: 1rem auto;
   border-radius: 0.5rem;
 
@@ -27,6 +27,6 @@
 
 @media screen and (min-width: 768px) {
   .shipCard {
-    width: 35vw;
+    width: 25vw;
   }
 }
