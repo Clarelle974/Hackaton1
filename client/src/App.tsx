@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import SideBar from "./components/SideBar";
 import Homepage from "./pages/Homepage";
 
 import "./App.css";
@@ -19,6 +20,7 @@ function App() {
       body.style.backgroundSize = "cover";
     } else {
       body.style.backgroundImage = "";
+
       body.style.backgroundColor = "#1a1919";
       body.style.overflow = "auto";
     }
@@ -31,10 +33,12 @@ function App() {
       ) : (
         <div className="menucomponents">
           <Header />
-
-          <main>
-            <Outlet />
-          </main>
+          <div className="layout">
+            <SideBar />
+            <main className="main-content">
+              <Outlet />
+            </main>
+          </div>
           <Footer />
         </div>
       )}
