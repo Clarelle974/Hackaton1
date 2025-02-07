@@ -1,6 +1,7 @@
 .mini-card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 .mini-card img {
   width: 10rem;

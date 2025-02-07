@@ -269,7 +269,7 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Une carte dessinée par un pirate fou… personne n'a encore su déchiffrer son code.",
     particularite: "Brille dans le noir les soirs de pleine lune.",
     rarete: "Unique",
-    image: "/public/carteautrésor.jpeg",
+    image: "/public/carteautresor.jpeg",
   },
   {
     id: 4,
