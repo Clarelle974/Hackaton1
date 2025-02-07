@@ -10,17 +10,111 @@ body {
   height: 100vh;
 }
 
-/* .menucomponents {
-  display: none;
-} */
-
 li {
   list-style-type: none;
+}
+.link-board {
+  background-color: rgba(255, 255, 255, 0.373);
 }
 
 .BackgroundHome {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30rem;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 100vw;
+  justify-content: space-around;
+  background-image: url("/pirateDaccueil.png");
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  background-position: 10% 90%;
+}
+
+.BackgroundHome a {
+  border: solid;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  font-family: "TheRumIsGone", sans-serif;
+  margin-right: 2rem;
+}
+
+.text-container {
+  display: flex;
+  position: relative;
+  top: -5rem;
+  margin-right: 5rem;
+  width: 50vw;
+  flex-direction: column;
+  justify-items: right;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Inknut Antiqua", serif;
+  color: #2c2c2c;
+  line-height: 160%;
+}
+
+.text {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 204, 0.9);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text:nth-child(1) {
+  animation: fadeInText 3s ease-in forwards 2s, fadeOutText 2s ease-out forwards
+    15s;
+}
+
+.text:nth-child(2) {
+  animation: fadeInText 2s ease-in forwards 10s, fadeOutText 2s ease-out
+    forwards 24s;
+}
+.BackgroundHome {
+  animation: fadeInText 5s ease-in forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutText {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
