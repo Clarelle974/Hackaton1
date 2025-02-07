@@ -30,3 +30,17 @@ a {
 Link {
   text-decoration: none;
 }
+
+.weather-container:hover,
+.shopCard:hover,
+.newsdetails:hover,
+.news:hover,
+.BackgroundHome:hover,
+.shipCardContainer:hover,
+.enemyDetails:hover,
+.EnemiesMap:hover,
+.crew-card:hover,
+.page-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

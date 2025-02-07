@@ -30,13 +30,12 @@ export default function EnemiesMap() {
   }, []);
 
   return (
-    <>
-      <div className="enemiesMap">
-        <h1>Enemies map</h1>
-        <div id="myshiptracking-widget-container">
-          <div id="myshiptracking-widget"> </div>
-        </div>
-      </div>
-    </>
+    <div className="EnemiesMap">
+      <h1>Enemies map</h1>
+      {/* <div
+        id="myshiptracking-widget"
+        style={{ width: "100%", height: "400px" }}
+      ></div> */}
+    </div>
   );
 }
