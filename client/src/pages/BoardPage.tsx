@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "../styles/boardpage.css";
-import { equipagePirate } from "../services/data";
 import MiniCrewCard from "../components/MiniCrewCard";
-import { naviresEnnemis } from "../services/data";
 import MiniEnemyCard from "../components/MiniEnemyCard";
+import { equipagePirate } from "../services/data";
+import { naviresEnnemis } from "../services/data";
 
 export default function () {
   return (
