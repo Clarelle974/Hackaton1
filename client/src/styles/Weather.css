@@ -5,8 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
+
   font-family: Arial, sans-serif;
 }
 .weather-container {
@@ -25,5 +24,5 @@ body {
 
 .elfsight-app-a7a09335-1dfb-4d76-ae45-d79db2151f34 {
   width: 100%;
-  margin-left: 8rem;
+  margin-left: 40rem;
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/header.css";
+import header from "/headerpirate.webp";
 
 export default function Header() {
   return (
@@ -10,29 +11,35 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Acceuil</Link>
           </li>
 
           <li>
-            <Link to="/crew">Crew</Link>
+            <Link to="/crew">Equipage</Link>
           </li>
 
           <li>
-            <Link to="/boardpage">Boardpage</Link>
+            <Link to="/boardpage">Tableau de bord</Link>
           </li>
 
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/shop">Boutique</Link>
           </li>
 
           <li>
-            <Link to="/weather">Weather</Link>
+            <Link to="/weather">Meteo</Link>
           </li>
           <li>
-            <Link to="/enemyships">Enemyships</Link>
+            <Link to="/enemyships">Bateaux ennemies</Link>
+          </li>
+          <li>
+            <Link to="/news">Actualites</Link>
           </li>
         </ul>
       </nav>
+      <div>
+        <img src={header} alt="" className="headerback" />
+      </div>
     </>
   );
 }
