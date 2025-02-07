@@ -17,3 +17,8 @@ footer {
 .imgfooter {
   height: 10rem;
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
+  margin-top: 5rem;
   img {
     display: block;
     width: 100%;
@@ -11,9 +12,12 @@
 
 .text-container {
   font-size: 0.8rem;
+  color: antiquewhite;
+  margin-top: 2rem;
 }
 .text-container h2 {
   font-size: 1.2rem;
+  margin-top: 2rem;
 }
 .text-container h3 {
   font-family: "TheRumIsGone", sans-serif;
@@ -29,6 +33,7 @@
   .details-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .enemyDetails img {
     height: 80vh;

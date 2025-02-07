@@ -61,3 +61,14 @@
 .crew2 {
   text-align: center;
 }
+
+.enemiesMap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: antiquewhite;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
