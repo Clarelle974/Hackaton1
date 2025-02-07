@@ -182,6 +182,7 @@ export const naviresEnnemis: Navire[] = [
 ];
 
 export type ArticleBoutique = {
+  id: number;
   nom: string;
   categorie: string;
   prix: string;
@@ -193,6 +194,7 @@ export type ArticleBoutique = {
 
 export const boutiquePirate: ArticleBoutique[] = [
   {
+    id: 10,
     nom: "Sabre du Kraken",
     categorie: "Arme",
     prix: "150 pièces d'or",
@@ -200,9 +202,10 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Un sabre recouvert d'écailles noires, censé avoir été trempé dans le sang d'un kraken.",
     particularite: "Laisse une légère odeur de poisson après chaque coup.",
     rarete: "Légendaire",
-    image: "./public/sabrepirate.jpeg",
+    image: "/public/sabrepirate.jpeg",
   },
   {
+    id: 9,
     nom: "Canon à silex 'Crachouilleur'",
     categorie: "Arme",
     prix: "800 pièces d'or",
@@ -211,9 +214,10 @@ export const boutiquePirate: ArticleBoutique[] = [
     particularite:
       "Parfois, il tire tout seul… quand il est de mauvaise humeur.",
     rarete: "Rare",
-    image: "./public/canon.jpeg",
+    image: "/public/canon.jpeg",
   },
   {
+    id: 8,
     nom: "Boussole de l'Indécis",
     categorie: "Accessoire",
     prix: "40 pièces d'or",
@@ -221,7 +225,7 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Indique toujours une direction… mais jamais la même deux fois de suite.",
     particularite: "Parfait pour se perdre avec style.",
     rarete: "Étrange",
-    image: "./public/boussole.jpeg",
+    image: "/public/boussole.jpeg",
   },
   // {
   //   nom: "Crochet 'Main d'Argent'",
@@ -234,6 +238,7 @@ export const boutiquePirate: ArticleBoutique[] = [
   //   image: "./public/boussole.jpeg",
   // },
   {
+    id: 7,
     nom: "Chapeau de Capitaine 'Grande Gueule'",
     categorie: "Vêtements",
     prix: "70 pièces d'or",
@@ -241,9 +246,10 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Un tricorne noir orné d'une plume de corbeau, parfait pour imposer le respect.",
     particularite: "Amplifie la voix du porteur lorsqu'il donne des ordres.",
     rarete: "Rare",
-    image: "./public/ChapeauCapitaine.jpeg",
+    image: "/public/ChapeauCapitaine.jpeg",
   },
   {
+    id: 6,
     nom: "Jumelles 'Oeil de Loup'",
     categorie: "Accessoire",
     prix: "60 pièces d'or",
@@ -252,12 +258,13 @@ export const boutiquePirate: ArticleBoutique[] = [
     particularite:
       "Un œil fantomatique apparaît parfois dans la lentille gauche.",
     rarete: "Mystique",
-    image: "./public/jumelle.png",
+    image: "/public/jumelle.png",
   },
   {
+    id: 5,
     nom: "Carte au Trésor Incomprise",
     categorie: "Objet Mystérieux",
-    prix: "Gratuit (mais avec un prix à payer...)",
+    prix: "Gratuit (ou pas...)",
     description:
       "Une carte dessinée par un pirate fou… personne n'a encore su déchiffrer son code.",
     particularite: "Brille dans le noir les soirs de pleine lune.",
@@ -265,6 +272,7 @@ export const boutiquePirate: ArticleBoutique[] = [
     image: "./public/carteautresor.jpeg",
   },
   {
+    id: 4,
     nom: "Bottes de Loup de Mer",
     categorie: "Vêtements",
     prix: "55 pièces d'or",
@@ -272,9 +280,10 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Des bottes en cuir trempé, résistantes à l'eau, au sable et aux promesses non tenues.",
     particularite: "Ne laissent aucune empreinte, sauf dans la neige.",
     rarete: "Rare",
-    image: "./public/bottespirate.jpeg",
+    image: "/public/bottespirate.jpeg",
   },
   {
+    id: 3,
     nom: "Tonnelet de Rhum Maudit",
     categorie: "Consommable",
     prix: "25 pièces d'or",
@@ -282,7 +291,7 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Un rhum noirci par le sel et le temps… délicieux, mais il fait chanter celui qui en boit.",
     particularite: "Plus on en boit, plus on chante juste.",
     rarete: "Maudit",
-    image: "./public/tonnelet.jpeg",
+    image: "/public/tonnelet.jpeg",
   },
   // {
   //   nom: "Corde de Pendaison Recyclée",
@@ -295,6 +304,7 @@ export const boutiquePirate: ArticleBoutique[] = [
   //   image: "./public/PerroquetEmpoisonneur.jpeg",
   // },
   {
+    id: 2,
     nom: "Perroquet Empoisonneur",
     categorie: "Animal de Compagnie",
     prix: "120 pièces d'or",
@@ -302,9 +312,10 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Un perroquet capable d’imiter n’importe quelle voix pour mieux manipuler les ennemis.",
     particularite: "Insulte les passants sans raison apparente.",
     rarete: "Légendaire",
-    image: "./public/PerroquetEmpoisonneur.jpeg",
+    image: "/public/PerroquetEmpoisonneur.jpeg",
   },
   {
+    id: 1,
     nom: "Œil de Verre 'Vision de l'Au-delà'",
     categorie: "Prothèse",
     prix: "90 pièces d'or",
@@ -312,7 +323,7 @@ export const boutiquePirate: ArticleBoutique[] = [
       "Un œil de verre enchanté qui permet de voir les âmes perdues en mer.",
     particularite: "Se met à pleurer tout seul certains soirs…",
     rarete: "Surnaturel",
-    image: "./public/oeilverre.jpeg",
+    image: "/public/oeilverre.jpeg",
   },
 ];
 
@@ -454,4 +465,12 @@ const getNewsDetails = (id: number) => {
   return result;
 };
 
-export { getNewsDetails };
+const getArticleById = (id: number) => {
+  const result = boutiquePirate.find((article) => article.id === Number(id));
+  if (!result) {
+    throw new Error();
+  }
+  return result;
+};
+
+export { getNewsDetails, getArticleById };

@@ -1,28 +1,42 @@
 import { useEffect } from "react";
-import "../styles/EnemiesMap.css";
-
-const EnemiesMap = () => {
+import "../styles/enemiesMap.css";
+declare global {
+  interface Window {
+    myshiptracking: {
+      initWidget: (id: string) => void;
+    };
+  }
+}
+export default function EnemiesMap() {
   useEffect(() => {
-    // Vérifier si le script est déjà ajouté
+    const mapContainer = document.getElementById(
+      "myshiptracking-widget-container",
+    );
+
     if (!document.getElementById("myshiptrackingscript")) {
       const script = document.createElement("script");
       script.id = "myshiptrackingscript";
       script.src = "//www.myshiptracking.com/js/widgetApi.js";
       script.async = true;
       script.defer = true;
-      document.body.appendChild(script);
+
+      script.onload = () => {
+        if (window.myshiptracking) {
+          window.myshiptracking.initWidget("myshiptracking-widget");
+        }
+      };
+      mapContainer?.appendChild(script);
     }
   }, []);
 
   return (
-    <div>
-      <h1>Enemies map</h1>
-      {/* <div
-        id="myshiptracking-widget"
-        style={{ width: "100%", height: "400px" }}
-      ></div> */}
-    </div>
+    <>
+      <div className="enemiesMap">
+        <h1>Enemies map</h1>
+        <div id="myshiptracking-widget-container">
+          <div id="myshiptracking-widget"> </div>
+        </div>
+      </div>
+    </>
   );
-};
-
-export default EnemiesMap;
+}
