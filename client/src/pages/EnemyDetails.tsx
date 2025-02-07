@@ -11,7 +11,7 @@ export default function EnemyDetails() {
       <section className="enemyDetails">
         <div className="details-container">
           <img src={ship?.img} alt="navire" />
-          <div className="text-container">
+          <div className="text-container1">
             <h2>Capitaine : {ship?.capitaine}</h2>
             <h3>Type : {ship?.type}</h3>
             <h3>Armement : </h3>

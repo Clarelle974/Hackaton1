@@ -10,11 +10,12 @@
   }
 }
 
-.text-container {
+.text-container1 {
   font-size: 0.8rem;
   color: antiquewhite;
   margin-top: 2rem;
 }
+
 .text-container h2 {
   font-size: 1.2rem;
   margin-top: 2rem;
@@ -34,6 +35,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 3rem;
   }
   .enemyDetails img {
     height: 80vh;
