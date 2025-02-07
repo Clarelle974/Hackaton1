@@ -1,5 +1,6 @@
 export const articlesPirates = [
   {
+    id: 1,
     titre:
       "Le Capitaine 'Vent-en-Panne' Coincé en Mer Sans un Souffle de Brise !",
     date: "2025-02-05",
@@ -7,24 +8,30 @@ export const articlesPirates = [
       "L'infâme capitaine 'Vent-en-Panne', célèbre pour sa chance légendaire (et son haleine de poisson avarié), s’est retrouvé bloqué au beau milieu des mers pendant 15 jours… faute de vent ! Son équipage a d'abord accusé une malédiction, puis un manque évident de compétences en aviron. Finalement, c’est une invasion de mouettes affamées qui a permis au navire d’avancer… en volant ses biscuits.",
     commentaire:
       "Moralité : toujours prévoir un plan B… et un stock de pain sec !",
+    img: "/public/piratebloquer.jpg",
   },
   {
+    id: 2,
     titre: "Un Trésor Enfoui Retrouvé… Mais Impossible à Ouvrir !",
     date: "2025-02-03",
     contenu:
       "L’équipage du Capitaine 'Barbe-Sceptique' a découvert un coffre au trésor sur une île abandonnée. Problème ? Impossible de l’ouvrir, même à coups de hache, de canon ou de jurons bien placés. Certains matelots pensent qu'il s'agit d'une ruse de l’ancien propriétaire, d'autres soupçonnent un simple manque de force musculaire.",
     commentaire:
       "Le coffre a été ramené à bord, en espérant qu'un membre du futur équipage sache crocheter autre chose qu'un poisson.",
+    img: "/public/coffrepirate.jpg",
   },
   {
+    id: 3,
     titre: "Panique en Haute Mer : Un Kraken Refuse de Lâcher le Navire",
     date: "2025-01-28",
     contenu:
       "Le capitaine 'Jean-Les-Deux-Pieds-Dans-le-Même-Sabot' a eu la surprise de voir son navire enlacé par les tentacules d’un kraken… qui semblait vouloir jouer ! Après trois heures de lutte acharnée (et une tentative de négociation au rhum), la créature a fini par relâcher l’équipage en échange de la moitié de la cargaison de biscuits.",
     commentaire:
       "Ce qui prouve une chose : même les monstres marins ont une faiblesse pour les douceurs !",
+    img: "/public/krakennews.jpg",
   },
   {
+    id: 4,
     titre:
       "Recrutement Difficile : Les Jeunes Pirates Refusent de Monter à Bord !",
     date: "2025-01-22",
@@ -32,8 +39,10 @@ export const articlesPirates = [
       "Les capitaines des Sept Mers se plaignent : recruter de jeunes pirates devient un véritable casse-tête. 'Ils veulent tous des bateaux avec Wi-Fi !' se lamente le Capitaine 'Grog-en-Bourre'. D’autres évoquent une pénurie de sabres de qualité et une peur grandissante des sirènes chanteuses.",
     commentaire:
       "Une solution envisagée ? Proposer un forfait 'piraterie tout compris' avec hamacs, cocktails et abonnements aux ballades chantées par le perroquet du bord.",
+    img: "/public/piratesbateau.jpg",
   },
   {
+    id: 5,
     titre:
       "Bataille Navale Épique : Deux Capitaines Se Battent Pour Une Carte... Erronée !",
     date: "2025-01-15",
@@ -41,6 +50,27 @@ export const articlesPirates = [
       "Les Capitaines 'Flibuste Fred' et 'Tatoué-Jusqu’aux-Orteils' se sont livrés à un duel mémorable pour une carte au trésor prétendument inestimable. Après des heures de combat acharné, ils ont découvert que la carte indiquait… une taverne servant 'le meilleur rhum des Caraïbes'. Résultat : une trêve immédiate et une tournée générale.",
     commentaire:
       "Finalement, tout le monde est gagnant quand le rhum est bon !",
+    img: "/public/piratesbagarre.jpg",
+  },
+  {
+    id: 6,
+    titre: "Les Pirates du Golfe de Gascogne : La Vengeance des Mouettes !",
+    date: "2025-02-06",
+    contenu:
+      "Les pirates du Golfe de Gascogne ont récemment fait parler d’eux en capturant un navire marchand... mais c’est leur attaque inattendue de mouettes affamées qui a fait le plus de bruit. Lors de l’abordage, un nuage de mouettes affamées s’est abattu sur le navire, volant biscuits, fromage, et même les épices précieuses. L’équipage pirate, pris par surprise, a dû fuir, laissant derrière eux des mouettes très satisfaites.",
+    commentaire:
+      "Leçon : ne jamais sous-estimer l’appétit d’une mouette en période de pénurie alimentaire.",
+    img: "/public/mouettes.jpg",
+  },
+  {
+    id: 7,
+    titre: "Napoléon et les Pirates : Une Alliance Inattendue ?",
+    date: "2025-02-07",
+    contenu:
+      "On raconte que Napoléon, durant ses voyages maritimes, a eu une rencontre insolite avec un groupe de pirates corses. Plutôt que de les combattre, l’empereur aurait tenté une alliance pour contrer les navires britanniques. Les pirates, au lieu de répondre par l’or ou le sang, ont proposé un échange : des cartes maritimes détaillées contre un stock de rhum. Napoléon, sceptique, aurait finalement accepté... mais il se serait empressé de chercher à doubler les corsaires pour ne pas leur laisser le monopole des eaux.",
+    commentaire:
+      "Napoléon a-t-il eu le dernier mot ? L’histoire reste floue...",
+    img: "/public/napoleon.jpg",
   },
 ];
 
@@ -64,6 +94,15 @@ export interface Crew {
   capacite: string;
   particularite: string;
   img: string;
+}
+
+export interface News {
+  titre: string;
+  date: string;
+  contenu: string;
+  commentaire: string;
+  img: string;
+  id: number;
 }
 export const naviresEnnemis: Navire[] = [
   {
@@ -406,3 +445,13 @@ export const equipagePirate = [
     img: "/public/chandelle.jpg",
   },
 ];
+
+const getNewsDetails = (id: number) => {
+  const result = articlesPirates.find((crew) => crew.id === Number(id));
+  if (!result) {
+    throw new Error();
+  }
+  return result;
+};
+
+export { getNewsDetails };

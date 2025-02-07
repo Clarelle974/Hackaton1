@@ -21,9 +21,10 @@
 .allcrewcards {
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
+  margin: 0 auto;
   gap: 2rem;
   margin-bottom: 4rem;
+  max-width: 65%;
 }
 .crew {
   margin: 5rem;

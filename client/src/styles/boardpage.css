@@ -1,0 +1,35 @@
+.page-container {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr 1fr; */
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.left-aside {
+  border-right: solid;
+  position: sticky;
+  width: 20vw;
+  /* top: 30px; */
+}
+.central {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.central h2 {
+  margin-bottom: 2rem;
+}
+
+.miniCardContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  overflow: hidden;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
