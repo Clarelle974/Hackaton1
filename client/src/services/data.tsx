@@ -1,5 +1,6 @@
 export const articlesPirates = [
   {
+    id: 1,
     titre:
       "Le Capitaine 'Vent-en-Panne' Coincé en Mer Sans un Souffle de Brise !",
     date: "2025-02-05",
@@ -7,24 +8,30 @@ export const articlesPirates = [
       "L'infâme capitaine 'Vent-en-Panne', célèbre pour sa chance légendaire (et son haleine de poisson avarié), s’est retrouvé bloqué au beau milieu des mers pendant 15 jours… faute de vent ! Son équipage a d'abord accusé une malédiction, puis un manque évident de compétences en aviron. Finalement, c’est une invasion de mouettes affamées qui a permis au navire d’avancer… en volant ses biscuits.",
     commentaire:
       "Moralité : toujours prévoir un plan B… et un stock de pain sec !",
+    img: "/public/piratebloquer.jpg",
   },
   {
+    id: 2,
     titre: "Un Trésor Enfoui Retrouvé… Mais Impossible à Ouvrir !",
     date: "2025-02-03",
     contenu:
       "L’équipage du Capitaine 'Barbe-Sceptique' a découvert un coffre au trésor sur une île abandonnée. Problème ? Impossible de l’ouvrir, même à coups de hache, de canon ou de jurons bien placés. Certains matelots pensent qu'il s'agit d'une ruse de l’ancien propriétaire, d'autres soupçonnent un simple manque de force musculaire.",
     commentaire:
       "Le coffre a été ramené à bord, en espérant qu'un membre du futur équipage sache crocheter autre chose qu'un poisson.",
+    img: "/public/coffrepirate.jpg",
   },
   {
+    id: 3,
     titre: "Panique en Haute Mer : Un Kraken Refuse de Lâcher le Navire",
     date: "2025-01-28",
     contenu:
       "Le capitaine 'Jean-Les-Deux-Pieds-Dans-le-Même-Sabot' a eu la surprise de voir son navire enlacé par les tentacules d’un kraken… qui semblait vouloir jouer ! Après trois heures de lutte acharnée (et une tentative de négociation au rhum), la créature a fini par relâcher l’équipage en échange de la moitié de la cargaison de biscuits.",
     commentaire:
       "Ce qui prouve une chose : même les monstres marins ont une faiblesse pour les douceurs !",
+    img: "/public/krakennews.jpg",
   },
   {
+    id: 4,
     titre:
       "Recrutement Difficile : Les Jeunes Pirates Refusent de Monter à Bord !",
     date: "2025-01-22",
@@ -32,8 +39,10 @@ export const articlesPirates = [
       "Les capitaines des Sept Mers se plaignent : recruter de jeunes pirates devient un véritable casse-tête. 'Ils veulent tous des bateaux avec Wi-Fi !' se lamente le Capitaine 'Grog-en-Bourre'. D’autres évoquent une pénurie de sabres de qualité et une peur grandissante des sirènes chanteuses.",
     commentaire:
       "Une solution envisagée ? Proposer un forfait 'piraterie tout compris' avec hamacs, cocktails et abonnements aux ballades chantées par le perroquet du bord.",
+    img: "/public/piratesbateau.jpg",
   },
   {
+    id: 5,
     titre:
       "Bataille Navale Épique : Deux Capitaines Se Battent Pour Une Carte... Erronée !",
     date: "2025-01-15",
@@ -41,11 +50,33 @@ export const articlesPirates = [
       "Les Capitaines 'Flibuste Fred' et 'Tatoué-Jusqu’aux-Orteils' se sont livrés à un duel mémorable pour une carte au trésor prétendument inestimable. Après des heures de combat acharné, ils ont découvert que la carte indiquait… une taverne servant 'le meilleur rhum des Caraïbes'. Résultat : une trêve immédiate et une tournée générale.",
     commentaire:
       "Finalement, tout le monde est gagnant quand le rhum est bon !",
+    img: "/public/piratesbagarre.jpg",
+  },
+  {
+    id: 6,
+    titre: "Les Pirates du Golfe de Gascogne : La Vengeance des Mouettes !",
+    date: "2025-02-06",
+    contenu:
+      "Les pirates du Golfe de Gascogne ont récemment fait parler d’eux en capturant un navire marchand... mais c’est leur attaque inattendue de mouettes affamées qui a fait le plus de bruit. Lors de l’abordage, un nuage de mouettes affamées s’est abattu sur le navire, volant biscuits, fromage, et même les épices précieuses. L’équipage pirate, pris par surprise, a dû fuir, laissant derrière eux des mouettes très satisfaites.",
+    commentaire:
+      "Leçon : ne jamais sous-estimer l’appétit d’une mouette en période de pénurie alimentaire.",
+    img: "/public/mouettes.jpg",
+  },
+  {
+    id: 7,
+    titre: "Napoléon et les Pirates : Une Alliance Inattendue ?",
+    date: "2025-02-07",
+    contenu:
+      "On raconte que Napoléon, durant ses voyages maritimes, a eu une rencontre insolite avec un groupe de pirates corses. Plutôt que de les combattre, l’empereur aurait tenté une alliance pour contrer les navires britanniques. Les pirates, au lieu de répondre par l’or ou le sang, ont proposé un échange : des cartes maritimes détaillées contre un stock de rhum. Napoléon, sceptique, aurait finalement accepté... mais il se serait empressé de chercher à doubler les corsaires pour ne pas leur laisser le monopole des eaux.",
+    commentaire:
+      "Napoléon a-t-il eu le dernier mot ? L’histoire reste floue...",
+    img: "/public/napoleon.jpg",
   },
 ];
 
 export interface Navire {
   nom: string;
+  img?: string;
   capitaine: string;
   tailleEquipage: number;
   type: string;
@@ -53,12 +84,33 @@ export interface Navire {
   reputation: string;
   particularite: string;
 }
+
+export interface Crew {
+  nom: string;
+  surnom: string;
+  age: number;
+  role: string;
+  phrasePreferee: string;
+  capacite: string;
+  particularite: string;
+  img: string;
+}
+
+export interface News {
+  titre: string;
+  date: string;
+  contenu: string;
+  commentaire: string;
+  img: string;
+  id: number;
+}
 export const naviresEnnemis: Navire[] = [
   {
     nom: "Le Trident Sanglant",
+    img: "/trident-sanglant.webp",
     capitaine: "Morgan 'Le Requin' Blacktooth",
     tailleEquipage: 80,
-    type: "Frégate",
+    type: "Fregate",
     armement: "24 canons, harpons renforcés, rames pour attaques surprises",
     reputation:
       "Aborde ses ennemis en silence avant de les couler sans sommation.",
@@ -67,6 +119,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "La Veuve Écarlate",
+    img: "/veuve-ecarlate.webp",
     capitaine: "Isabella 'Sans-Pitié' De Vega",
     tailleEquipage: 60,
     type: "Brick",
@@ -78,6 +131,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "L'Ouragan Noir",
+    img: "/ouragan-noir.webp",
     capitaine: "Sebastian 'Main de Fer' Graves",
     tailleEquipage: 100,
     type: "Galion",
@@ -89,6 +143,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "Le Ventre de Poséidon",
+    img: "/ventre-poseidon.png",
     capitaine: "Bartholomew 'Trois Poumons' Flint",
     tailleEquipage: 50,
     type: "Sloop rapide",
@@ -100,6 +155,7 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "Le Jugement Dernier",
+    img: "/jugement-dernier.png",
     capitaine: "Ezekiel 'Le Pieux' Crowe",
     tailleEquipage: 75,
     type: "Navire de guerre",
@@ -112,9 +168,10 @@ export const naviresEnnemis: Navire[] = [
   },
   {
     nom: "L'Anguille Fantôme",
+    img: "/aiguille-fantome.png",
     capitaine: "Silas 'Sans-Visage' Vayne",
     tailleEquipage: 40,
-    type: "Corvette légère",
+    type: "Corvette legere",
     armement:
       "6 canons rapides, filets empoisonnés, carreaux d’arbalète silencieux",
     reputation:
@@ -124,7 +181,17 @@ export const naviresEnnemis: Navire[] = [
   },
 ];
 
-export const boutiquePirate = [
+export type ArticleBoutique = {
+  nom: string;
+  categorie: string;
+  prix: string;
+  description: string;
+  particularite: string;
+  rarete: string;
+  image: string;
+};
+
+export const boutiquePirate: ArticleBoutique[] = [
   {
     nom: "Sabre du Kraken",
     categorie: "Arme",
@@ -133,16 +200,18 @@ export const boutiquePirate = [
       "Un sabre recouvert d'écailles noires, censé avoir été trempé dans le sang d'un kraken.",
     particularite: "Laisse une légère odeur de poisson après chaque coup.",
     rarete: "Légendaire",
+    image: "./public/sabrepirate.jpeg",
   },
   {
-    nom: "Pistolet à silex 'Crachouilleur'",
+    nom: "Canon à silex 'Crachouilleur'",
     categorie: "Arme",
-    prix: "80 pièces d'or",
+    prix: "800 pièces d'or",
     description:
-      "Un pistolet à un coup, précis si le vent est du bon côté (et si on prie assez fort).",
+      "Un canon à un coup, précis si le vent est du bon côté (et si on prie assez fort).",
     particularite:
       "Parfois, il tire tout seul… quand il est de mauvaise humeur.",
     rarete: "Rare",
+    image: "./public/canon.jpeg",
   },
   {
     nom: "Boussole de l'Indécis",
@@ -152,16 +221,18 @@ export const boutiquePirate = [
       "Indique toujours une direction… mais jamais la même deux fois de suite.",
     particularite: "Parfait pour se perdre avec style.",
     rarete: "Étrange",
+    image: "./public/boussole.jpeg",
   },
-  {
-    nom: "Crochet 'Main d'Argent'",
-    categorie: "Prothèse",
-    prix: "100 pièces d'or",
-    description:
-      "Un élégant crochet en argent, idéal pour gratter sous un bandage ou ouvrir une bouteille de rhum.",
-    particularite: "Électrise légèrement quiconque lui serre la main.",
-    rarete: "Épique",
-  },
+  // {
+  //   nom: "Crochet 'Main d'Argent'",
+  //   categorie: "Prothèse",
+  //   prix: "100 pièces d'or",
+  //   description:
+  //     "Un élégant crochet en argent, idéal pour gratter sous un bandage ou ouvrir une bouteille de rhum.",
+  //   particularite: "Électrise légèrement quiconque lui serre la main.",
+  //   rarete: "Épique",
+  //   image: "./public/boussole.jpeg",
+  // },
   {
     nom: "Chapeau de Capitaine 'Grande Gueule'",
     categorie: "Vêtements",
@@ -170,6 +241,7 @@ export const boutiquePirate = [
       "Un tricorne noir orné d'une plume de corbeau, parfait pour imposer le respect.",
     particularite: "Amplifie la voix du porteur lorsqu'il donne des ordres.",
     rarete: "Rare",
+    image: "./public/ChapeauCapitaine.jpeg",
   },
   {
     nom: "Jumelles 'Oeil de Loup'",
@@ -180,6 +252,7 @@ export const boutiquePirate = [
     particularite:
       "Un œil fantomatique apparaît parfois dans la lentille gauche.",
     rarete: "Mystique",
+    image: "./public/jumelle.png",
   },
   {
     nom: "Carte au Trésor Incomprise",
@@ -189,6 +262,7 @@ export const boutiquePirate = [
       "Une carte dessinée par un pirate fou… personne n'a encore su déchiffrer son code.",
     particularite: "Brille dans le noir les soirs de pleine lune.",
     rarete: "Unique",
+    image: "./public/carteautrésor.jpeg",
   },
   {
     nom: "Bottes de Loup de Mer",
@@ -198,6 +272,7 @@ export const boutiquePirate = [
       "Des bottes en cuir trempé, résistantes à l'eau, au sable et aux promesses non tenues.",
     particularite: "Ne laissent aucune empreinte, sauf dans la neige.",
     rarete: "Rare",
+    image: "./public/bottespirate.jpeg",
   },
   {
     nom: "Tonnelet de Rhum Maudit",
@@ -207,16 +282,18 @@ export const boutiquePirate = [
       "Un rhum noirci par le sel et le temps… délicieux, mais il fait chanter celui qui en boit.",
     particularite: "Plus on en boit, plus on chante juste.",
     rarete: "Maudit",
+    image: "./public/tonnelet.jpeg",
   },
-  {
-    nom: "Corde de Pendaison Recyclée",
-    categorie: "Outil",
-    prix: "30 pièces d'or",
-    description:
-      "Une corde solide et usée… qui a déjà servi à quelque chose de peu réjouissant.",
-    particularite: "Parle parfois en chuchotant des avertissements.",
-    rarete: "Troublant",
-  },
+  // {
+  //   nom: "Corde de Pendaison Recyclée",
+  //   categorie: "Outil",
+  //   prix: "30 pièces d'or",
+  //   description:
+  //     "Une corde solide et usée… qui a déjà servi à quelque chose de peu réjouissant.",
+  //   particularite: "Parle parfois en chuchotant des avertissements.",
+  //   rarete: "Troublant",
+  //   image: "./public/PerroquetEmpoisonneur.jpeg",
+  // },
   {
     nom: "Perroquet Empoisonneur",
     categorie: "Animal de Compagnie",
@@ -225,6 +302,7 @@ export const boutiquePirate = [
       "Un perroquet capable d’imiter n’importe quelle voix pour mieux manipuler les ennemis.",
     particularite: "Insulte les passants sans raison apparente.",
     rarete: "Légendaire",
+    image: "./public/PerroquetEmpoisonneur.jpeg",
   },
   {
     nom: "Œil de Verre 'Vision de l'Au-delà'",
@@ -234,6 +312,7 @@ export const boutiquePirate = [
       "Un œil de verre enchanté qui permet de voir les âmes perdues en mer.",
     particularite: "Se met à pleurer tout seul certains soirs…",
     rarete: "Surnaturel",
+    image: "./public/oeilverre.jpeg",
   },
 ];
 
@@ -246,6 +325,7 @@ export const equipagePirate = [
     capacite: "Peut invoquer la foudre en levant son sabre",
     phrasePreferee: "Que le tonnerre me foudroie si je perds !",
     particularite: "Son perroquet insulte tout le monde en vieux gaélique.",
+    img: "/public/pirate.jpg",
   },
   {
     nom: "Bigoudi Jack",
@@ -255,6 +335,7 @@ export const equipagePirate = [
     capacite: "Peut tresser une barbe en pleine tempête",
     phrasePreferee: "Un nœud bien fait, c’est la clé du succès !",
     particularite: "Exige une coiffure impeccable avant chaque abordage.",
+    img: "/public/bigoudijack.jpg",
   },
   {
     nom: "Mains-d’Acier",
@@ -264,6 +345,7 @@ export const equipagePirate = [
     capacite: "Répare un navire avec trois clous et un regard menaçant",
     phrasePreferee: "Si ça tient, c’est que c’est bon.",
     particularite: "Personne ne l’a jamais vu dormir, même en pleine tempête.",
+    img: "/public/mainacier.jpg",
   },
   {
     nom: "Oeil-de-Serpent",
@@ -274,6 +356,7 @@ export const equipagePirate = [
     phrasePreferee: "Un coup de canon bien placé, et hop ! Plus de problème.",
     particularite:
       "A un bandeau sur l'œil gauche… mais son œil droit est en verre.",
+    img: "/public/pirate1 .jpg",
   },
   {
     nom: "Dent-d’Ancre",
@@ -286,6 +369,7 @@ export const equipagePirate = [
       "Si tu demandes ce qu’il y a dedans, t’es pas prêt à le manger.",
     particularite:
       "A une dent en or en forme d’ancre et une obsession pour le rhum arrangé.",
+    img: "/public/ancre.jpg",
   },
   {
     nom: "Pied-Léger",
@@ -295,15 +379,17 @@ export const equipagePirate = [
     capacite: "Se faufile partout sans un bruit",
     phrasePreferee: "Les murs ont des oreilles, moi j’ai des jambes rapides.",
     particularite: "Parle toujours en chuchotant, même en pleine bataille.",
+    img: "/public/piedslegers.jpg",
   },
   {
     nom: "Sifflote",
-    surnom: "Le Charmeur de Requins",
+    surnom: "La Charmeuse de Requins",
     age: 36,
     role: "Navigateur",
-    capacite: "Sait toujours où il est, même en pleine brume",
+    capacite: "Sait toujours où elle est, même en pleine brume",
     phrasePreferee: "Si l’étoile brille, c’est que c’est par là !",
     particularite: "Siffle tout le temps… même en dormant.",
+    img: "/public/sifflotte.jpg",
   },
   {
     nom: "Culbuto",
@@ -314,6 +400,7 @@ export const equipagePirate = [
     phrasePreferee:
       "Si tu tombes pas une fois par jour, c’est que t’apprends rien.",
     particularite: "A déjà survécu à 17 chutes de mât.",
+    img: "/public/gros.jpg",
   },
   {
     nom: "Madame Kraken",
@@ -323,6 +410,7 @@ export const equipagePirate = [
     capacite: "Peut soigner une fracture avec des algues et du rhum",
     phrasePreferee: "Bois ça. Ça va te guérir… ou t’achever.",
     particularite: "Récite des incantations bizarres en préparant des potions.",
+    img: "/public/kraken.jpg",
   },
   {
     nom: "Racine Noire",
@@ -332,6 +420,7 @@ export const equipagePirate = [
     capacite: "Fait pousser des plantes médicinales sur le pont",
     phrasePreferee: "Tout ce qui pique soigne.",
     particularite: "A un cactus qu’il appelle 'Jean-Baptiste'.",
+    img: "/public/serpent.jpg",
   },
   {
     nom: "Moustique",
@@ -342,6 +431,7 @@ export const equipagePirate = [
     phrasePreferee:
       "Ce qui est à toi est à moi, et ce qui est à moi… reste à moi.",
     particularite: "Dort avec une main sur son butin, l’autre sur sa dague.",
+    img: "/public/moustique.jpg",
   },
   {
     nom: "Bout-de-Chandelle",
@@ -352,5 +442,16 @@ export const equipagePirate = [
     phrasePreferee: "Euh… désolé, Capitaine.",
     particularite:
       "A déjà survécu à trois tentatives d’abandon sur une île déserte.",
+    img: "/public/chandelle.jpg",
   },
 ];
+
+const getNewsDetails = (id: number) => {
+  const result = articlesPirates.find((crew) => crew.id === Number(id));
+  if (!result) {
+    throw new Error();
+  }
+  return result;
+};
+
+export { getNewsDetails };

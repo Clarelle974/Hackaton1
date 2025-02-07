@@ -1,0 +1,18 @@
+body {
+  color: white;
+}
+
+.ShopCard {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px;
+}
+
+.imageshop > img {
+  width: 25rem;
+  height: auto;
+}
+
+.shopdetail {
+  padding: 2rem;
+}

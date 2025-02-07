@@ -1,0 +1,18 @@
+/* .EnemyShips {
+  display: flex;
+} */
+.shipCardContainer {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.EnemyShips h1 {
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shipCardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,52 @@
+.enemyDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  img {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
+
+.text-container {
+  font-size: 0.8rem;
+}
+.text-container h2 {
+  font-size: 1.2rem;
+}
+.text-container h3 {
+  font-family: "TheRumIsGone", sans-serif;
+  margin-top: 1rem;
+}
+.desc {
+  font-weight: 200;
+  line-height: 120%;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .details-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .enemyDetails img {
+    height: 80vh;
+  }
+  .enemyDetails p {
+    margin-top: 1rem;
+  }
+  .text-container {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  .text-container h2 {
+    margin-bottom: 2rem;
+  }
+  .text-container h3 {
+    margin-top: 2rem;
+  }
+  .desc {
+    margin-top: 0;
+  }
+}
