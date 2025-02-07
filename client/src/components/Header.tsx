@@ -11,11 +11,11 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Acceuil</Link>
+            <Link to="/">Accueil</Link>
           </li>
 
           <li>
-            <Link to="/crew">Equipage</Link>
+            <Link to="/crew">Équipage</Link>
           </li>
 
           <li>
@@ -27,13 +27,13 @@ export default function Header() {
           </li>
 
           <li>
-            <Link to="/weather">Meteo</Link>
+            <Link to="/weather">Météo</Link>
           </li>
           <li>
-            <Link to="/enemyships">Bateaux ennemies</Link>
+            <Link to="/enemyships">Bateaux ennemis</Link>
           </li>
           <li>
-            <Link to="/news">Actualites</Link>
+            <Link to="/news">Actualités</Link>
           </li>
         </ul>
       </nav>
