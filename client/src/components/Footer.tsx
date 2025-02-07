@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <h2 className="footer-title">
-        Cette embarcation appartient à notre équipage!
+        Cette embarcation appartient a notre equipage !
       </h2>
       <div className="mid-footer">
         <img src={logo} alt="" className="imgfooter" />
