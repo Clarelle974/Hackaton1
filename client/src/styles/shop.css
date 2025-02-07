@@ -1,16 +1,36 @@
-body {
+/* body {
   color: white;
+} */
+
+h1 {
+  padding: 1rem;
+}
+
+.allshopcard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .ShopCard {
   display: flex;
   flex-direction: row;
-  border: solid 1px;
+  border: solid 1px antiquewhite;
+  border-radius: 10px;
+}
+
+.imageshop {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .imageshop > img {
-  width: 25rem;
+  width: 18rem;
   height: auto;
+  padding: 1rem;
 }
 
 .shopdetail {

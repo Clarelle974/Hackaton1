@@ -6,7 +6,7 @@ export default function Shop() {
   return (
     <div>
       <h1>🦜 Shop</h1>
-      <div>
+      <div className="allshopcard">
         {boutiquePirate.map((article) => (
           <ShopCard key={article.nom} article={article} />
         ))}

@@ -7,6 +7,7 @@
 
 body {
   background-size: cover;
+  height: 100vh;
 }
 
 /* .menucomponents {
@@ -17,7 +18,7 @@ li {
   list-style-type: none;
 }
 
-a {
+/* .BackgroundHome > ul > li > a {
   color: white;
   text-decoration: none;
   border: solid;
@@ -28,10 +29,9 @@ a {
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.373);
-}
+} */
 
 .BackgroundHome {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
