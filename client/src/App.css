@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: antiquewhite;
+  background-color: var(--fullDark);
 }
 h1,
 h2 {
