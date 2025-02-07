@@ -10,11 +10,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/crew">Crew</Link>
+            <Link to="/">Accueil</Link>
           </li>
 
           <li>
@@ -22,14 +18,21 @@ export default function Header() {
           </li>
 
           <li>
+            <Link to="/crew">Equipage</Link>
+          </li>
+
+          <li>
             <Link to="/shop">Shop</Link>
           </li>
 
           <li>
-            <Link to="/weather">Weather</Link>
+            <Link to="/weather">Météo</Link>
           </li>
           <li>
-            <Link to="/enemyships">Enemyships</Link>
+            <Link to="/enemyships">Ennemis</Link>
+          </li>
+          <li>
+            <Link to="/enemiesmap">Carte </Link>
           </li>
         </ul>
       </nav>

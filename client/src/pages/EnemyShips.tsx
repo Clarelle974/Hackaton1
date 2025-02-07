@@ -7,7 +7,7 @@ export default function EnemyShips() {
   return (
     <>
       <div className="EnemyShips">
-        <h1>enemy ships</h1>
+        <h1>Navires ennemis</h1>
         <div className="shipCardContainer">
           {naviresEnnemis.map((ship) => (
             <EnemyCard key={ship.nom} ship={ship} />

@@ -4,7 +4,7 @@ import { equipagePirate } from "../services/data";
 export default function Crew() {
   return (
     <>
-      <h1 className="crew">Crew</h1>
+      <h1 className="crew">Equipage</h1>
       <section className="allcrewcards">
         {equipagePirate.map((crew) => (
           <CrewCard key={crew.nom} crew={crew} />
