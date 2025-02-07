@@ -17,9 +17,10 @@ function App() {
       body.style.backgroundImage = "url('/HomePage.jpg')";
       body.style.backgroundColor = "transparent";
       body.style.overflow = "hidden";
+      body.style.backgroundSize = "cover";
     } else {
       body.style.backgroundImage = "";
-      body.style.backgroundColor = "#000";
+      body.style.backgroundColor = "#1a1919";
       body.style.overflow = "auto";
     }
   }, [isHomePage]);

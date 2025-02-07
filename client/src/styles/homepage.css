@@ -5,31 +5,29 @@
   font-style: normal;
 }
 
-body .BackgroundHome {
-  background-size: cover;
-  height: 100vh;
-  background-image: url("/HomePage.jpg");
-  overflow: hidden;
-}
-
 li {
   list-style-type: none;
 }
 .link-board {
-  background-color: rgba(255, 255, 255, 0.373);
+  background-color: rgba(9, 8, 8, 0.196);
+}
+body {
+  background-size: cover;
+  height: 100vh;
 }
 
 .BackgroundHome {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: flex-end;
   overflow: hidden;
   width: 100vw;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-image: url("/pirateDaccueil.png");
   background-repeat: no-repeat;
   background-size: 50vw;
-  background-position: 10% 90%;
+  background-position: left bottom;
 }
 
 .BackgroundHome a {
@@ -37,7 +35,7 @@ li {
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
   font-family: "TheRumIsGone", sans-serif;
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 
 .text-container {
