@@ -15,7 +15,7 @@ const EnemiesMap = () => {
   }, []);
 
   return (
-    <div>
+    <div className="EnemiesMap">
       <h1>Enemies map</h1>
       {/* <div
         id="myshiptracking-widget"
