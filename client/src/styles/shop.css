@@ -22,6 +22,7 @@ h1 {
 .ShopCard {
   display: flex;
   flex-direction: row;
+  flex-direction: column;
   border: solid 1px antiquewhite;
   border-radius: 10px;
 }
