@@ -4,7 +4,7 @@
   border: solid 1px;
   align-items: center;
   width: 14rem;
-  height: 30rem;
+  height: 22rem;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 .allshop {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
   margin: 4rem;
 }

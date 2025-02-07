@@ -15,12 +15,15 @@ body {
   align-items: center;
   width: 80%;
   max-width: 600px;
-  background: rgba(0, 0, 0, 0.7);
+
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+  margin-left: 9rem;
+  margin-top: 5rem;
 }
 
 .elfsight-app-a7a09335-1dfb-4d76-ae45-d79db2151f34 {
   width: 100%;
+  margin-left: 8rem;
 }

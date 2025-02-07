@@ -2,12 +2,13 @@
   display: flex;
   width: 10rem;
   margin: 1rem auto;
-  border-radius: 0.5rem;
+  border-radius: 10px;
 
   img {
     display: block;
-    width: 9rem;
-    margin: 1rem auto;
+    width: 10rem;
+    margin: 0.5rem auto;
+    border-radius: 80px;
   }
   h2 {
     font-size: 1rem;
