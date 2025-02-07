@@ -27,7 +27,7 @@
 .newspage {
   display: flex;
   flex-direction: column;
-
+  border-bottom: solid;
   max-width: 65%;
   margin: 0 auto;
 }
