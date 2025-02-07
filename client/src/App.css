@@ -23,6 +23,7 @@ body {
 h1,
 h2 {
   font-family: "TheRumIsGone", sans-serif;
+  font-weight: 200;
 }
 a {
   text-decoration: none;
@@ -31,30 +32,4 @@ a {
 
 Link {
   text-decoration: none;
-}
-
-.layout {
-  display: flex;
-}
-
-.left-aside {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 20vw;
-  height: 100vh;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgb(41, 41, 41);
-  display: flex;
-  flex-direction: column;
-  padding-top: 20vh;
-}
-
-.main-content {
-  margin-left: 20vw;
-  width: 80vw;
-  padding: 3rem;
 }
