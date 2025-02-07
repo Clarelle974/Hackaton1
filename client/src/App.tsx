@@ -1,50 +1,45 @@
-import { Outlet, useLocation } from "react-router-dom";
-import "./App.css";
 import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-// import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
+
+import "./App.css";
 
 function App() {
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const body = document.body;
-    const url = location.pathname;
-
-    const applyStyles = () => {
-      if (url === "/") {
-        body.style.backgroundImage = `url("/public/HomePage.jpg")`;
-        body.style.overflow = "hidden";
-      } else {
-        body.style.backgroundColor = "black";
-      }
-    };
-
-    const resetStyles = () => {
+    if (isHomePage) {
+      body.style.backgroundImage = "url('/HomePage.jpg')";
+      body.style.backgroundColor = "transparent";
+      body.style.overflow = "hidden";
+    } else {
       body.style.backgroundImage = "";
-      body.style.backgroundColor = "";
-      body.style.overflow = "";
-    };
-    applyStyles();
-
-    return () => {
-      resetStyles();
-    };
-  }, [location]);
+      body.style.backgroundColor = "#000";
+      body.style.overflow = "auto";
+    }
+  }, [isHomePage]);
 
   return (
     <>
-      <div className="menucomponents">
-        <Header />
-        <Navbar />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
+      {isHomePage ? (
+        <Homepage />
+      ) : (
+        <div className="menucomponents">
+          <Header />
+          <Navbar />
+          <main>
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
+
 export default App;

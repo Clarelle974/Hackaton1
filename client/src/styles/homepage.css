@@ -5,9 +5,11 @@
   font-style: normal;
 }
 
-body {
+body .BackgroundHome {
   background-size: cover;
   height: 100vh;
+  background-image: url("/HomePage.jpg");
+  overflow: hidden;
 }
 
 li {
