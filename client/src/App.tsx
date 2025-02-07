@@ -3,6 +3,7 @@ import "./App.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 // import Navbar from "./components/Navbar";
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
     <>
       <div className="menucomponents">
         <Header />
-        {/* <Navbar /> */}
+        <Navbar />
         <main>
           <Outlet />
         </main>
