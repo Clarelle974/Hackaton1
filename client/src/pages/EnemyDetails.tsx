@@ -7,8 +7,8 @@ export default function EnemyDetails() {
   const ship = naviresEnnemis.find((s) => s.nom === nom);
   return (
     <>
+      <h2 className="crew">{ship?.nom}</h2>
       <section className="enemyDetails">
-        <h2>{ship?.nom}</h2>
         <div className="details-container">
           <img src={ship?.img} alt="navire" />
           <div className="text-container">
