@@ -25,3 +25,7 @@ nav ul li a::after {
 nav ul li a:hover {
   color: #ffdd57; /* Changement de couleur au survol */
 }
+.headerback {
+  height: 27rem;
+  min-width: 100vw;
+}
