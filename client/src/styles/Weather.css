@@ -5,12 +5,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/Pirate.webp"); /* Remplace par une vraie URL */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
 }
-
 .weather-container {
   display: flex;
   justify-content: center;
