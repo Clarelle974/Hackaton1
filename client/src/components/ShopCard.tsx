@@ -17,7 +17,7 @@ export default function ShopCard({ article }: ShopCardProps) {
             <p>Prix : {article.prix}</p>
           </div>
           <div className="button">
-            <button type="button">Achéte!</button>
+            <button type="button">Achète!</button>
           </div>
         </div>
       </div>
