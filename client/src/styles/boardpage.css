@@ -5,24 +5,11 @@
   gap: 2rem;
   padding: 2rem;
 }
-.left-aside {
-  /* border-right: solid 1px #ccc; */
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 20vw;
-  height: 100vh;
-  background: rgb(41, 41, 41);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20vh;
-}
+
 .central {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  margin-left: 20vw;
+  width: 70%;
 }
 .central h2 {
   margin-bottom: 2rem;
@@ -54,7 +41,7 @@
 .news {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  /* width: 20vw; */
   color: antiquewhite;
 }
 .newstitlehome {
