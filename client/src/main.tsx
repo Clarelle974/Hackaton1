@@ -18,8 +18,9 @@ import News from "./pages/News";
 import Newsdetails from "./pages/NewsDetails";
 import Page404 from "./pages/Page404";
 import Shop from "./pages/Shop";
+import ShopDetails from "./pages/ShopDetails";
 import Weather from "./pages/Weather";
-import { getNewsDetails } from "./services/data";
+import { getArticleById, getNewsDetails } from "./services/data";
 
 /* ************************************************************************* */
 
@@ -57,6 +58,11 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/shop/:id",
+        element: <ShopDetails />,
+        loader: ({ params }) => getArticleById(Number(params.id)),
       },
       {
         path: "/news",
