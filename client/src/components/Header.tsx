@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <div className="sitetitle">
-        <h1>o PIRATE o</h1>
+        <h1>o PIRATE 2.0 o</h1>
       </div>
       <nav>
         <ul>
