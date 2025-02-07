@@ -12,12 +12,13 @@ export default function ShopCard({ article }: ShopCardProps) {
           <img src={article.image} alt="pirate" />
         </div>
         <div className="shopdetail">
-          <h3>{article.nom}</h3>
-          <p>Catégorie : {article.categorie}</p>
-          <p>Prix : {article.prix}</p>
-          <p>Description : {article.description}</p>
-          <p>Particularité : {article.particularite}</p>
-          <p>Rareté : {article.rarete}</p>
+          <div className="details">
+            <h4>{article.nom}</h4>
+            <p>Prix : {article.prix}</p>
+          </div>
+          <div className="button">
+            <button type="button">Achéte!</button>
+          </div>
         </div>
       </div>
     </>

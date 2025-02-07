@@ -8,7 +8,7 @@ interface NewsCardProps {
 export default function NewsCard({ news }: NewsCardProps) {
   return (
     <section className="newspage">
-      <h4>- {news.titre}</h4>
+      <h4>{news.titre}</h4>
     </section>
   );
 }

@@ -1,4 +1,4 @@
-.EnemiesMap {
+.enemiesMap {
   display: flex;
   height: 100vh;
   color: antiquewhite;
@@ -12,7 +12,17 @@
   width: 50%;
   font-family: monospace;
   color: antiquewhite;
+  flex-direction: column;
   opacity: 0;
   animation: fadeIn 4s forwards;
   animation-delay: 0.5s;
+}
+
+#myshiptracking-widget-container {
+  display: flex;
+  justify-content: center;
+}
+
+#myshiptracking-widget {
+  display: flex;
 }

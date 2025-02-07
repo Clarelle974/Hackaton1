@@ -1,18 +1,92 @@
-body {
-  color: white;
+.ShopCard {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  align-items: center;
+  width: 14rem;
+  height: 30rem;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.allshopcard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .ShopCard {
   display: flex;
   flex-direction: row;
-  border: solid 1px;
+  flex-direction: column;
+  border: solid 1px antiquewhite;
+  border-radius: 10px;
+}
+
+.imageshop {
+  display: flex;
+  align-items: center;
+
+  border-radius: 10px;
 }
 
 .imageshop > img {
-  width: 25rem;
+  width: 12rem;
   height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
 }
 
 .shopdetail {
-  padding: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.allshop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin: 4rem;
+}
+button {
+  text-align: center;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  background: #fff;
+  color: #000;
+}
+.pirate {
+  height: 22rem;
+  border-radius: 10px;
+}
+.alldetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.title1 {
+  text-align: center;
+  margin: 6rem;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttondetails {
+  padding: 1rem;
 }

@@ -7,14 +7,17 @@
 
 body {
   background-size: cover;
+  height: 100vh;
 }
 
+li {
+  list-style-type: none;
+}
 .link-board {
   background-color: rgba(255, 255, 255, 0.373);
 }
 
 .BackgroundHome {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
