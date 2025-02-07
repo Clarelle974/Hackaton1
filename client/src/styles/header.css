@@ -1,0 +1,27 @@
+.sitetitle {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 1rem;
+  color: antiquewhite;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav ul li a::after {
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffdd57; /* Changement de couleur au survol */
+}

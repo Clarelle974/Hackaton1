@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 export default function Homepage() {
   return (
     <div className="BackgroundHome">
+      <ul>
+        <li>{/* <Link to="/boardpage">Embarquer</Link> */}</li>
+
+        <li>
+          <Link to="/boardpage" className="link-board">
+            Embarquer
+          </Link>
+        </li>
+      </ul>
+
       <div className="text-container">
         <p className="text">
           Écoutez bien, moussaillons du code ! Quand j’étais à votre place,
