@@ -11,6 +11,7 @@ import App from "./App";
 // Import additional components for new routes
 import BoardPage from "./pages/BoardPage";
 import Crew from "./pages/Crew";
+import EnemiesMap from "./pages/EnemiesMap";
 import EnemyDetails from "./pages/EnemyDetails";
 import EnemyShips from "./pages/EnemyShips";
 import Homepage from "./pages/Homepage";
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+      {
+        path: "/enemiesMap",
+        element: <EnemiesMap />,
       },
     ],
   },

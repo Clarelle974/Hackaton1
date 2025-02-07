@@ -1,0 +1,19 @@
+.EnemiesMap {
+  display: flex;
+  height: 100vh;
+  color: antiquewhite;
+  background-image: url("/Pirate.webp");
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+* .EnemiesMap > h1 {
+  font-size: 6rem;
+  width: 50%;
+  font-family: monospace;
+  color: antiquewhite;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  animation-delay: 0.5s;
+}
